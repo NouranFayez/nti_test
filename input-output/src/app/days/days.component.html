@@ -1,0 +1,5 @@
+<div *ngFor="let a of days | slice:0:1">
+    <app-single [article]="a"></app-single>
+    </div>
+
+    <button [routerLink]="[2]" [queryParams]="{nam:'nouran' , age:28}">single day</button>

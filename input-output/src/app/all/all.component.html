@@ -1,0 +1,14 @@
+<div *ngFor="let a of all | slice : 0:1">
+<app-single [article]="a" (countChanged)="countChangedHandler($event)"></app-single>
+hello {{ClickCounter}}
+</div>
+{{all | json}}
+<div *ngIf="false ; else data">
+ bye
+</div>
+
+<ng-template #data>hello</ng-template>
+
+<app-single2 #hello></app-single2>
+{{hello.data}}
+{{hello.getFullName()}}

@@ -1,0 +1,9 @@
+<router-outlet></router-outlet>
+<app-post-create (postCreated)="onPostAdded($event)"></app-post-create>
+
+<div class="dropdown-divider"></div>
+
+<div *ngFor="let x of storedPosts">
+  {{x.title}}
+</div>
+<!-- <app-post-list [posts]="storedPosts"></app-post-list> -->
